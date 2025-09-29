@@ -55,8 +55,32 @@
 
     h1 {
       margin: 20px 0 10px;
-      font-size: 32px;
+      font-size: 36px;
       font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 5px #fff,
+                   0 0 10px #fff,
+                   0 0 20px #0ff,
+                   0 0 40px #0ff,
+                   0 0 80px #0ff;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 20px #0ff,
+                     0 0 40px #0ff,
+                     0 0 80px #0ff;
+      }
+      to {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #0ff,
+                     0 0 40px #0ff,
+                     0 0 80px #0ff,
+                     0 0 120px #0ff;
+      }
     }
 
     p {
@@ -85,7 +109,7 @@
 <body>
   <header>
     <a href="#">Home</a>
-    <a href="https://github.com/Ahsannxyz?tab=repositories" target="_blank">Repos</a>
+    <a href="https://example.com" target="_blank">Repos</a>
   </header>
 
   <div class="profile">
@@ -94,7 +118,7 @@
     <p>14 year old English developer.</p>
     
     <div class="socials">
-      <a href="https://open.spotify.com/user/31o7gz4ak2dh4tvxjoedi3m4u74q?si=c1ae28f3fe8b4f27" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+      <a href="YOUR_SPOTIFY_LINK" target="_blank"><i class="fa-brands fa-spotify"></i></a>
     </div>
   </div>
 </body>
